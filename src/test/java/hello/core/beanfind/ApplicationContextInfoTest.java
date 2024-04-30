@@ -27,7 +27,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
             BeanDefinition beanDefinition = ac.getBeanDefinition(beaanDefinitionName);
 
             //Role ROLE_APPLICATION: 직접 등록한 애플리케이션 빈
-            //Role ROLE_INFRASTRUCTURE: 스프링이 내부에서 관리하는 빈
+            //Role ROLE_INFRASTRUCTURE: 스프링이 내부에서 관리하는A 빈
             //애플리케이션 개발위해 등록한 빈들
             if(beanDefinition.getRole() == BeanDefinition.ROLE_APPLICATION){
                 Object bean = ac.getBean(beaanDefinitionName);
